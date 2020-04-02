@@ -5,7 +5,9 @@
   >
     Let's learn Angular
   </h1>
-  <div [class.hidden]="myHelloComponent.inputName.length == 0">Writting '{{ myHelloComponent.inputName }}' in HelloComponent</div>
+  <div [class.hidden]="myHelloComponent.inputName.length == 0">
+    <span [ngClass]="updateNameClasses(myHelloComponent.inputName)">'{{ myHelloComponent.inputName }}'</span> in HelloComponent
+  </div>
   <br>
   <custom-hello 
     #myHelloComponent 

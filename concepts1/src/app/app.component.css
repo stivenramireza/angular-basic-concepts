@@ -1,3 +1,19 @@
 .hidden {
     opacity: 0;
 }
+
+.error {
+    color: red;
+}
+
+.warning {
+    color: yellow;
+}
+
+.success {
+    color: green;
+}
+
+.bold {
+    font-weight: 600;
+}
