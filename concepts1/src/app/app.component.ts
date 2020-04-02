@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'concepts1';
+
+  public myName:string = 'Stiven';
+
+  onSayHello(message) {
+    console.log(message);
+  }
 }
