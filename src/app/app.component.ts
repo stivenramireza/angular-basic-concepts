@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoggerService } from './logger.service';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,13 @@ export class AppComponent {
   public myName:string = 'Enrique';
   public titleStyles: {};
   public counter = 0;
+
+  constructor(private logger:LoggerService) {
+
+  }
   
   onSayHello(message){
-    console.log(message);
+    this.logger.log(message);
     this.counter++;
     this.updateTitleStyles();
   }

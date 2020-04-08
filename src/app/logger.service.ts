@@ -1,0 +1,11 @@
+export class LoggerService {
+    log(msg:string) {
+        console.log(msg);
+    }
+    error(msg:string) {
+        console.error(msg);
+    }
+    warning(msg:string) {
+        console.warn(msg);
+    }
+}
