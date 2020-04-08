@@ -8,6 +8,6 @@
     </div>
 </div>
 
-<p *ngFor="let item of namesList; index as i" (click)="onClick()">
-    {{i}} - Hello {{ item | upperCapital }}!
+<p *ngFor="let item of namesList; index as i" (click)="onNameClick()">
+    {{i}} - Hello {{ item | upperCapital}}!
 </p>
